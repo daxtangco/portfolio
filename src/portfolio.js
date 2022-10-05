@@ -7,7 +7,7 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Dax Tangco',
-  role: 'Jr. Full Stack Web Developer',
+  role: 'Full Stack Web Developer',
   description:
     'A graduate from KodeGo Bootcamp, and an aspiring Full Stack Web Developer that is equipped of languages required for a full stack website. Individually, knows that there are a lot to improve and will never stop learning to be the best in his craft. Can also do web designs that are compatible and will give best experience to users.',
   resume: 'https://drive.google.com/file/d/19zY_NbnFD7CDbZkZCK9_HHmO__pCCCVW/view?usp=sharing',
@@ -40,7 +40,7 @@ const projects = [
     name: 'MusicApp',
     description:
       'Website that is made for music lovers and with simplified experience. Integrated Spotify API for the tracks, albums, and artists. It is also made with ReactJS for a faster and better transition from different sections.',
-    stack: ['SASS, ReactJS, NodeJS, MySQL, OracleDB'],
+    stack: ['SASS, ReactJS, ExpressJS, MySQL, OracleDB'],
     sourceCode: 'https://github.com/boymelvs/musicapp',
     livePreview: 'https://musicapp-kodego-proj.vercel.app/',
   },
