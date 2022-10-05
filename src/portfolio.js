@@ -60,7 +60,10 @@ const skills = [
   'Laravel',
   'MySQL',
   'OracleDB',
-  'Figma'
+  'Figma',
+  'Adobe Photoshop',
+  'Adobe Illustrator',
+  'Adobe InDesign',
 ]
 
 const contact = {
