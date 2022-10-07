@@ -10,7 +10,7 @@ const about = {
   role: 'Full Stack Web Developer',
   description:
     'A graduate from KodeGo Bootcamp, and an aspiring Full Stack Web Developer that is equipped of languages required for a full stack website. Individually, knows that there are a lot to improve and will never stop learning to be the best in his craft. Can also do web designs that are compatible and will give best experience to users.',
-  resume: 'https://drive.google.com/file/d/19zY_NbnFD7CDbZkZCK9_HHmO__pCCCVW/view?usp=sharing',
+  resume: 'https://drive.google.com/file/d/1makt_mewY-wUNs52TInugS3vk5kd30HI/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/dax-axis-tangco-ab5940240/',
     github: 'https://github.com/daxtangco',
