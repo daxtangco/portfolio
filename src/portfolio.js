@@ -63,7 +63,7 @@ const skills = [
   'Figma',
   'Adobe Photoshop',
   'Adobe Illustrator',
-  'Adobe InDesign',
+  'Adobe XD',
 ]
 
 const contact = {
