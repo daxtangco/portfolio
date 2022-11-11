@@ -40,10 +40,35 @@ const projects = [
     name: 'MusicApp',
     description:
       'Website that is made for music lovers and with simplified experience. Integrated Spotify API for the tracks, albums, and artists. It is also made with ReactJS for a faster and better transition from different sections.',
-    stack: ['SASS, ReactJS, ExpressJS, MySQL, OracleDB'],
+    stack: ['HTML5', 'CSS3', 'Javascript'],
     sourceCode: 'https://github.com/boymelvs/musicapp',
     livePreview: 'https://musicapp-kodego-proj.vercel.app/',
   },
+  {
+    name: 'E-Calculator',
+    description:
+      'A calculator that uses Javascript and integrating keyboard commands so that the user will not click on the buttons on-screen.',
+    stack: ['HTML5', 'CSS3', 'Javascript'],
+    sourceCode: 'https://github.com/daxtangco/e-calculator',
+    livePreview: 'https://daxtangco.github.io/e-calculator/',
+  },
+  {
+    name: 'React Journal',
+    description:
+      'ReactJS made to-do list or journal.',
+    stack: ['ReactJS'],
+    sourceCode: 'https://github.com/daxtangco/react-journal',
+    livePreview: 'https://react-journal-black.vercel.app',
+  },
+  {
+    name: 'Unsplash Image Search',
+    description:
+      'ReactJS application that uses Unsplash API for image search.',
+    stack: ['ReactJS'],
+    sourceCode: 'https://github.com/daxtangco/image-search',
+    livePreview: 'https://image-search-ochre.vercel.app',
+  },
+  
 ]
 
 const skills = [
@@ -56,6 +81,7 @@ const skills = [
   'ExpressJS',
   'Material UI',
   'Bootstrap',
+  'Tailwind CSS',
   'PHP',
   'Laravel',
   'MySQL',
