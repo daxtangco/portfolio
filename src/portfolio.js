@@ -40,7 +40,7 @@ const projects = [
     name: 'MusicApp',
     description:
       'Website that is made for music lovers and with simplified experience. Integrated Spotify API for the tracks, albums, and artists. It is also made with ReactJS for a faster and better transition from different sections.',
-    stack: ['HTML5', 'CSS3', 'Javascript'],
+    stack: ['HTML5', 'CSS3', 'ReactJS', 'NodeJS', 'ExpressJS', 'MySQL', 'Web API', 'REST API'],
     sourceCode: 'https://github.com/boymelvs/musicapp',
     livePreview: 'https://musicapp-kodego-proj.vercel.app/',
   },
