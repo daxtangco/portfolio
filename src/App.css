@@ -11,15 +11,15 @@
   font-size: 15px;
   line-height: 20px;
   white-space: pre-wrap;
-  color: #0cee00;
+  color: #40fa75;
   font-family: monospace;
   display: flex;
   flex-direction: column;
 }
 
 .terminal-banner {
-  color: rgb(174, 174, 174);
-  text-shadow: 0 0 5px rgb(179, 179, 179);
+  color: #40fa75;
+  text-shadow: 0 0 5px #40fa75;
   line-height: normal;
   font-weight: bold;
   font-size: calc(1vw + 7px);
@@ -47,8 +47,8 @@
 }
 
 .terminal-command-output dt {
-  color: #e70000;
-  text-shadow: 0 0 4px #e70000;
+  color: #FF00FF;
+  /* text-shadow: 0 0 4px #edc43c; */
 }
 
 .terminal-command-output dd {
@@ -90,7 +90,7 @@
   font-family: inherit;
   font-size: inherit;
   font-size: inherit;
-  color: rgb(0, 255, 51);
+  color: rgb(190, 255, 203);
   background: transparent;
   border: 0px;
   outline: none; /* no highlight on focus */
@@ -107,15 +107,16 @@
 }
 
 .terminal-glow {
-  color: #eeeeee;
-  text-shadow: 0 0 4px #eeeeee;
+  color: #21ff30;
+  text-shadow: 0 0 4px #1aff2d;
 }
 
 a {
-  color: #dea5f5;
+  color: #FF00FF;
+  text-shadow: 0 0 4px #FF00FF;
 }
 a:hover {
   color: black;
-  background-color: #c4a5f5;
+  background-color: #FF00FF;
   text-decoration: none;
 }
