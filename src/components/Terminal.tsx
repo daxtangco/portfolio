@@ -184,7 +184,7 @@ const Terminal = (props: TerminalProps) => {
       <>
       <ul>
           <li>
-            <a href="password_vault.exe" download="password_vault">Password Vault</a>
+            <a href="https://github.com/daxtangco/terminal-react/blob/106c7ba22ccfce86bd9e5d3e0b7effbb411cea98/public/password_vault" download="password_vault.zip">Password Vault</a>
             <ul>
               <li>
                 Source Code: <a href="https://github.com/daxtangco/password-vault.git">Github Repo</a>
