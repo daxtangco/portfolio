@@ -275,6 +275,12 @@ const Terminal = (props: TerminalProps) => {
         <br />
           <dt>Security+ (Preparing)</dt>
           <dd>CompTIA Certification</dd>
+          <ul>
+            <li>Assess the security posture of an enterprise environment and recommend and implement appropriate security solutions.</li>
+            <li>Monitor and secure hybrid environments, including cloud, mobile, Internet of Things (IoT), and operational technology.</li>
+            <li>Operate with an awareness of applicable regulations and policies, including principles of governance, risk, and compliance.</li>
+            <li>Identify, analyze, and respond to security events and incidents.</li>
+          </ul>
 
           <dt>Introduction to Cybersecurity</dt>
           <dd><a href="https://cs50.harvard.edu/cybersecurity/2023/#how-to-take-this-course">Harvard CS50 (Audit)</a></dd>
