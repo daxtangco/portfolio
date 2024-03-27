@@ -11,15 +11,15 @@
   font-size: 15px;
   line-height: 20px;
   white-space: pre-wrap;
-  color: #aaa;
+  color: #0cee00;
   font-family: monospace;
   display: flex;
   flex-direction: column;
 }
 
 .terminal-banner {
-  color: teal;
-  text-shadow: 0 0 5px teal;
+  color: rgb(174, 174, 174);
+  text-shadow: 0 0 5px rgb(179, 179, 179);
   line-height: normal;
   font-weight: bold;
   font-size: calc(1vw + 7px);
@@ -47,8 +47,8 @@
 }
 
 .terminal-command-output dt {
-  color: #eeeeee;
-  text-shadow: 0 0 4px #eeeeee;
+  color: #e70000;
+  text-shadow: 0 0 4px #e70000;
 }
 
 .terminal-command-output dd {
@@ -90,7 +90,7 @@
   font-family: inherit;
   font-size: inherit;
   font-size: inherit;
-  color: rgb(240, 191, 129);
+  color: rgb(0, 255, 51);
   background: transparent;
   border: 0px;
   outline: none; /* no highlight on focus */

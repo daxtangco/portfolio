@@ -5,7 +5,6 @@ import InputArea from "./InputArea";
 import ErrorMessage from "./ErrorMessage";
 import WelcomeMessage from "./WelcomeMessage";
 import { logEvent } from "firebase/analytics";
-import { analytics } from "../firebase";
 
 // Just a little helper function so I don't have to continually update my age
 const getAge = (birthDate: Date) => {
@@ -81,28 +80,27 @@ const Terminal = (props: TerminalProps) => {
     help: (
       <div>
         <p>
-          Wow, I thought the only people who would visit this site would be bots
-          and spammers, guess I was wrong. Just type any of the commands below
+          Type any of the commands below
           to get some more info. You can even type a few letters and press [tab]
           or '.' to autocomplete.
         </p>
         <dl>
           <dt>about</dt>
-          <dd>Stop stalking me</dd>
+          <dd>Get to know me</dd>
           <dt>projects</dt>
-          <dd>Yeah, I've made some cool stuff before</dd>
+          <dd>Things I've done, Web, Mobile development, and cybersecurity</dd>
           <dt>skills</dt>
-          <dd>I'm pretty good at some things</dd>
-          <dt>awards</dt>
-          <dd>A bit of boasting</dd>
+          <dd>Things I know</dd>
+          <dt>exp</dt>
+          <dd>Work Experience and Academics</dd>
           <dt>repo</dt>
           <dd>Take a look at some of my work</dd>
-          <dt>cv</dt>
-          <dd>Check out my CV [pdf - 197KB]</dd>
+          <dt>resume</dt>
+          <dd>Check out my resume</dd>
           <dt>contact</dt>
-          <dd>Bring on the spam</dd>
-          <dt>website</dt>
-          <dd>How I built this</dd>
+          <dd>Reach me!</dd>
+          <dt>github</dt>
+          <dd>Other things I do</dd>
           <dt>all</dt>
           <dd>Tell me everything</dd>
           <dt>clear</dt>
@@ -113,39 +111,12 @@ const Terminal = (props: TerminalProps) => {
     about: (
       <div>
         <p>
-          Hey there! Thanks for taking such a keen interest in me. Hopefully
-          you're not gonna spam or stalk me... Okay, I guess if you must stalk
-          me, just give me fair warning so I can look presentable when you
-          arrive at my door.
+          As you probably know, my name is {glow("Dax Tangco")}. I'm a{" "}
+          {getAge(new Date(2000, 8, 10))} year old {glow("Computer Engineer")}{" "}
+          born in the Philippines living in Manila.
         </p>
         <p>
-          Right, so, where to begin? Well, my parents met in... Nah, just
-          kidding.
-          <br />
-          As you probably know, my name is {glow("Craig Feldman")}. I'm a{" "}
-          {getAge(new Date(1992, 12, 23))} year old {glow("Computer Scientist")}{" "}
-          born and bred in the beautiful South Africa and currently living in
-          Cape Town.
-        </p>
-        <p>
-          I graduated with distinction from the University of Cape Town with a
-          Bachelor of Business Science degree in Computer Science. It comprised
-          of four years of computer science courses, as well as many business
-          courses (for example, I completed three years of economics, stats, and
-          finance).
-        </p>
-        <p>
-          I also have an MSc degree in Computer Science from the University of
-          Oxford, where I was awarded a full academic scholarship. Studying
-          abroad was an amazing experience - highlights include early morning
-          rowing, croquet, formal dinners, and just exploring Oxford with
-          amazing people and friends.
-        </p>
-        <p>
-          Some of my interests include: machine learning, the blockchain and
-          cryptography, and leveraging these tools to help solve problems,
-          particularly in the {glow("fintech")} space. I'm also pretty into fly
-          fishing!
+        Former developer and security enthusiast, I love doing projects that combine these two interests of mine. My experience in development, together with my hunger for knowledge with new technologies, allows me to have a better grasp of the future that is very near for some of us. I am a self-starter, and I believe that in life we should never stop learning. And I am always looking for challenges and other ways to gain knowledge to go deeper within new technologies.
         </p>
         <p>
           My previous formal work experience includes:
@@ -211,32 +182,52 @@ const Terminal = (props: TerminalProps) => {
     ),
     projects: (
       <>
-        <p>
-          I'm always working on comp sciey (not really a word) things. Why don't
-          you check out a few of my public code repositories? Just type 'repo'
-          to get the links.
-        </p>
-        <p>
-          I've also dabbled in producing a{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://weaverworks.co.za"
-          >
-            property-management portal
-          </a>{" "}
-          that provides property managers and buildings with some really cool
-          software and tools. The project uses TypeScript, Node.js, React (with
-          Material-UI components) and Firebase.
-        </p>
-        <p>
-          You can also check out my MSc thesis{" "}
-          <a href="MSc_Thesis.pdf" download="Craig Feldman - MSc Thesis.pdf">
-            An investigation into the applicability of a blockchain based voting
-            system
-          </a>{" "}
-          - this one took a while!
-        </p>
+      <ul>
+          <li>
+            <a href="password_vault.exe" download="password_vault">Password Vault</a>
+            <ul>
+              <li>
+                Source Code: <a href="https://github.com/daxtangco/password-vault.git">Github Repo</a>
+              </li>
+              <li>
+                Tech stack: Python, TKInter, SHA256
+              </li>
+              <li>
+                Description: Local Password vault that manages your different account and has a built in password generator for your different passwords.
+              </li>
+            </ul>
+          </li>
+          <br/>
+          <li>
+            <a href="https://drive.google.com/file/d/19imUILQ4wg7lpouG-e13eXeLDgmpB-lI/view?usp=sharing">SwiftUI Slots</a>
+            <ul>
+              <li>
+                Source Code: <a href="https://github.com/daxtangco/swiftui-slots">Github Repo</a>
+              </li>
+              <li>
+                Tech stack: Swift, SwiftUI
+              </li>
+              <li>
+                Description: A simple slot machines that uses the basics of Swift and SwiftUI for practice.
+              </li>
+            </ul>
+          </li>
+          <br/>
+          <li>
+            <a href="https://drive.google.com/file/d/1czWntJ6k5_8tmY3kcWE_MVNoll76YFAx/view?usp=sharing">War Challenge Card Game</a>
+            <ul>
+              <li>
+                Source Code: <a href="https://github.com/daxtangco/war-challenge">Github Repo</a>
+              </li>
+              <li>
+                Tech stack: Swift, SwiftUI
+              </li>
+              <li>
+                Description: A Card game that compares the card and adds up the point to the player with higher number using Swift and SwiftUI
+              </li>
+            </ul>
+          </li>
+      </ul>
       </>
     ),
     contact: (
@@ -502,79 +493,74 @@ const Terminal = (props: TerminalProps) => {
     ),
   };
 
-  const processCommand = (input: string) => {
-    logEvent(analytics, "command_received", { command: input });
+const processCommand = (input: string) => {
 
-    // Store a record of this command with a ref to allow us to scroll it into view.
-    // Note: We use a ref callback here because setting the ref directly, then clearing output seems to set the ref to null.
-    const commandRecord = (
-      <div
-        ref={(el) => (scrollRef.current = el)}
-        className="terminal-command-record"
-      >
-        <span className="terminal-prompt">{terminalPrompt}</span>{" "}
-        <span>{input}</span>
-      </div>
-    );
+  const commandRecord = (
+    <div
+      ref={(el) => (scrollRef.current = el)}
+      className="terminal-command-record"
+    >
+      <span className="terminal-prompt">{terminalPrompt}</span>{" "}
+      <span>{input}</span>
+    </div>
+  );
 
-    // Add command to to history if the command is not empty
-    if (input.trim()) {
-      setHistory([...history, input]);
-      setHistoryIndex(history.length + 1);
-    }
+  if (input.trim()) {
+    setHistory([...history, input]);
+    setHistoryIndex(history.length + 1);
+  }
 
-    // Now process command, ignoring case
-    const inputCommand = input.toLowerCase();
-    if (!isValidCommand(inputCommand)) {
-      setOutput([
-        ...output,
-        commandRecord,
-        <div className="terminal-command-output">
-          <ErrorMessage command={inputCommand} />
-        </div>,
-      ]);
-    } else if (isEchoCommand(inputCommand)) {
-      setOutput([
-        ...output,
-        commandRecord,
-        <div className="terminal-command-output">{commands[inputCommand]}</div>,
-      ]);
-    } else if (isUtilityCommand(inputCommand)) {
-      switch (inputCommand) {
-        case "clear": {
-          setOutput([]);
-          break;
-        }
-        case "all": {
-          // Output all commands in a custom order.
-          const allCommandsOutput = [
-            "about",
-            "awards",
-            "skills",
-            "projects",
-            "repo",
-            "contact",
-            "website",
-          ].map((command) => (
-            <>
-              <div className="terminal-heading">{command}</div>
-              <div className="terminal-command-output">
-                {commands[command as EchoCommand]}
-              </div>
-            </>
-          ));
+  const inputCommand = input.toLowerCase();
+  if (!isValidCommand(inputCommand)) {
+    setOutput([
+      ...output,
+      commandRecord,
+      <div className="terminal-command-output">
+        <ErrorMessage command={inputCommand} />
+      </div>,
+    ]);
+  } else if (isEchoCommand(inputCommand)) {
+    setOutput([
+      ...output,
+      commandRecord,
+      <div className="terminal-command-output">{commands[inputCommand]}</div>,
+    ]);
+  } else if (isUtilityCommand(inputCommand)) {
+    switch (inputCommand) {
+      case "clear": {
+        setOutput([]);
+        break;
+      }
+      case "all": {
+        const allCommandsOutput = [
+          "about",
+          "awards",
+          "skills",
+          "projects",
+          "repo",
+          "contact",
+          "website",
+        ].map((command) => (
+          <>
+            <div className="terminal-heading">{command}</div>
+            <div className="terminal-command-output">
+              {commands[command as EchoCommand]}
+            </div>
+          </>
+        ));
 
-          setOutput([commandRecord, ...allCommandsOutput]);
-          break;
-        }
-        case "cv": {
-          setOutput([...output, commandRecord]);
-          downloadFile("CV.pdf", "Craig Feldman - Curriculum Vitae.pdf");
-          break;
-        }
+        setOutput([commandRecord, ...allCommandsOutput]);
+        break;
+      }
+      case "cv": {
+        setOutput([...output, commandRecord]);
+        downloadFile("CV.pdf", "Craig Feldman - Curriculum Vitae.pdf");
+        break;
       }
     }
-  };
+  }
+};
+
 
   const getHistory = (direction: "up" | "down") => {
     let updatedIndex;

@@ -17,8 +17,9 @@ const WelcomeMessage = (props: WelcomeMessageProps) => {
       }
       welcomeMessageRef.current.insertAdjacentText(
         "beforeend",
-        props.message[index++]
+        props.message[index]
       );
+      index++;
       if (index === props.message.length) {
         clearInterval(typeText);
         if (props.inputRef.current) {
@@ -27,6 +28,7 @@ const WelcomeMessage = (props: WelcomeMessageProps) => {
         }
       }
     }, 30);
+    return () => clearInterval(typeText); // Clear interval on component unmount
   }, [props.inputRef, props.message]);
   return (
     <div ref={welcomeMessageRef} className="terminal-welcome-message"></div>
