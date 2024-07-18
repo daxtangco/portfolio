@@ -87,7 +87,7 @@ const Terminal = (props: TerminalProps) => {
           <dt>about</dt>
           <dd>Get to know me</dd>
           <dt>projects</dt>
-          <dd>Things I've done, Web, Mobile development, and cybersecurity</dd>
+          <dd>Things I've done, Software development and cybersecurity</dd>
           <dt>skills</dt>
           <dd>Things I know</dd>
           <dt>exp</dt>
@@ -121,13 +121,13 @@ const Terminal = (props: TerminalProps) => {
       <>
       <ul>
           <li>
-            <a href="https://github.com/daxtangco/terminal-react/blob/0f1008bd7f1289a2d34cb10096866db319a8b88f/public/dist.zip">Password Vault (Download it here)</a>
+            <a href="https://drive.google.com/file/d/1_J0-D6r94CNXw06zPbKoLJIn8BcQlDW8/view">Password Vault (Download it here)</a>
             <ul>
               <li>
-                Source Code: <a href="https://github.com/daxtangco/password-vault.git">Github Repo</a>
+                Source Code: <a href="https://github.com/daxtangco/PassVault">Github Repo</a>
               </li>
               <li>
-                Tech stack: Python, TKInter, SHA256
+                Tech stack: Java, JavaFX, SQLit, AES-256, SHA-256
               </li>
               <li>
                 Description: Local Password vault that manages your different account and has a built in password generator for your different passwords.
@@ -250,17 +250,17 @@ const Terminal = (props: TerminalProps) => {
           <dt>Technical Support Engineer</dt>
           <dd><a href="https://www.spreedly.com/">Spreedly</a></dd>
           <ul>
-            <li>Handled Triage tickets, Receiver tickets, Migration tickets, Export tickets, and Import Tickets</li>
-            <li>Handled investigations in customer’s queries in terms of gateway, payment method, or transaction</li>
-            <li>Escalated properly to the teams responsible for the incidents of specific events</li>
+            <li>Streamlined the resolution process for Tirage, Receiver, Migration, Export, and Import tickets by implementing a new triage system, resulting in a 20% faster response time. </li>
+            <li>Conducted in-depth investigations into customer queries regarding gateways, payment methods, and transactions by utilizing SQL queries and API tools, improving customer satisfaction by 15%</li>
+            <li>Collaborated with cross-functional teams by hosting weekly incident review meetings and utilizing Jira for tracking, resulting in a 10% decrease in ticket backlog</li>
           </ul>
 
-          <dt>Web/Mobile Application Developer</dt>
+          <dt>Junior Software Engineer</dt>
           <dd><a href="https://www.volenday.com/">Volenday</a></dd>
           <ul>
-            <li>Developed AHAmatic Website</li>
-            <li>Developed an Android application for employees</li>
-            <li>Used NextJS to develop the website and Flutter for the Mobile Application</li>
+            <li>Engineered the AHAmatic website using NextJS, resulting in a 25% increase in user engagement.</li>
+            <li>Developed a robust Android application for employees using Flutter, improving internal communication and productivity by 30%</li>
+            <li>Integrated APIs and third-party services to enhance application functionality, leading to a more seamless user experience.</li>
           </ul>
 
           <dt>Junior Web Developer</dt>
@@ -273,13 +273,14 @@ const Terminal = (props: TerminalProps) => {
 
         <div className="terminal-heading">Certifications</div>
         <br />
-          <dt>Security+ (Preparing)</dt>
+          <dt>Security+</dt>
           <dd>CompTIA Certification</dd>
           <ul>
-            <li>Assess the security posture of an enterprise environment and recommend and implement appropriate security solutions.</li>
-            <li>Monitor and secure hybrid environments, including cloud, mobile, Internet of Things (IoT), and operational technology.</li>
+            <li>Course Overview: In-depth training on assessing and managing security posture in enterprise environments.</li>
+            <li>Practical Application: Identification, analysis, and response to security events and incidents.</li>
             <li>Operate with an awareness of applicable regulations and policies, including principles of governance, risk, and compliance.</li>
-            <li>Identify, analyze, and respond to security events and incidents.</li>
+            <li>Certification: Demonstrates practical skills in automating cybersecurity tasks with Python and managing security in various environments.
+</li>
           </ul>
 
           <dt>Introduction to Cybersecurity</dt>
@@ -311,9 +312,8 @@ protection, and risk-reward analysis. Experienced in addressing real-world secur
               <li>Assets, Threats, and Vulnerabilities</li>
               <li>Automate Cybersecurity with Python</li>
             </ul>
-            <li>Prepared for entry-level cybersecurity roles with practical, hands-on assessments. Proficient in beginner-level Python,
-Linux, SQL, SIEM tools, and IDS. Skilled in identifying and mitigating common cybersecurity risks, threats, and
-vulnerabilities.</li>
+            <li>Practical Applications: Hands-on assessments to prepare for entry-level cybersecurity roles.</li>
+            <li>Certification: Demonstrates practical skills in automating cybersecurity tasks with Python and managing security in various environments.</li>
           </ul>
 
         <div className="terminal-heading">Education</div>
