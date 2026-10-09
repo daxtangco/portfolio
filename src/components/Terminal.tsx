@@ -113,13 +113,55 @@ const Terminal = (props: TerminalProps) => {
           born in the Philippines living in Manila.
         </p>
         <p>
-        Former developer and security enthusiast, I love doing projects that combine these two interests of mine. My experience in development, together with my hunger for knowledge with new technologies, allows me to have a better grasp of the future that is very near for some of us. I am a self-starter, and I believe that in life we should never stop learning. And I am always looking for challenges and other ways to gain knowledge to go deeper within new technologies.
+        I'm a {glow("Junior Cybersecurity Engineer")} at HelloConnect, where I review GitHub PRs for security issues and handle security tickets in JIRA. I came to security through software engineering and technical support, so I like projects that combine building and breaking things: honeypots, detection engineering, and web attack detection. I'm a self-starter and always looking for new challenges to keep learning.
         </p>
       </div>
     ),
     projects: (
       <>
       <ul>
+          <li>
+            Hybrid Web Attack Detection System
+            <ul>
+              <li>
+                Source Code: <a href="https://github.com/daxtangco/web-attack-anomaly-detection">Github Repo</a>
+              </li>
+              <li>
+                Tech stack: Python, FastAPI, VAE anomaly detection, local LLM, OWASP Juice Shop
+              </li>
+              <li>
+                Description: Hybrid WAF combining VAE anomaly detection, signature enforcement and local LLM triage, built as an async FastAPI reverse proxy. Reached 0.946 ROC-AUC and 95.9% zero-day XSS recall on CSIC 2010, blocking live attacks against OWASP Juice Shop in ~0.15 s at a 0.83% false-positive rate.
+              </li>
+            </ul>
+          </li>
+          <br/>
+          <li>
+            Post-VAPT Automated Detection and Response
+            <ul>
+              <li>
+                Tech stack: Elastic Security, Elastic Agent, Elastic Defend
+              </li>
+              <li>
+                Description: Custom detection rules built from critical VAPT findings (e.g., IDOR, mass exfiltration), with Elastic Agent and Elastic Defend ingesting 30k+ logs for a real-time monitoring and response workflow.
+              </li>
+            </ul>
+          </li>
+          <br/>
+          <li>
+            Cowrie SSH/Telnet Honeypot
+            <ul>
+              <li>
+                Source Code: <a href="https://github.com/daxtangco/honeypot-revlv">Github Repo</a>
+              </li>
+              <li>
+                Tech stack: Cowrie, PostgreSQL, Python
+              </li>
+              <li>
+                Description: Medium-interaction honeypot capturing attacker credentials, commands and file downloads, logged to PostgreSQL for threat analysis. Patched core PostgreSQL logging bugs and added controlled credential access via userdb.txt.
+              </li>
+            </ul>
+          </li>
+          <br/>
           <li>
             <a href="https://drive.google.com/file/d/1_J0-D6r94CNXw06zPbKoLJIn8BcQlDW8/view">Password Vault (Download it here)</a>
             <ul>
@@ -247,6 +289,30 @@ const Terminal = (props: TerminalProps) => {
         <dl>
         <div className="terminal-heading">Work Experience</div>
         <br />
+          <dt>Junior Cybersecurity Engineer</dt>
+          <dd>HelloConnect Inc. (Apr 2026 - Present)</dd>
+          <ul>
+            <li>Screen GitHub pull requests for security issues before approval.</li>
+            <li>Handle security issues raised in JIRA, responding quickly or escalating.</li>
+            <li>Use agentic AI to automate repetitive work such as PR approval and JIRA ticket review.</li>
+          </ul>
+
+          <dt>Cybersecurity Engineering Intern</dt>
+          <dd>REVLV Solutions Inc. (Jan 2026 - Apr 2026)</dd>
+          <ul>
+            <li>Conducted VAPT for internal and external websites.</li>
+            <li>Implemented a fake-SSH honeypot that logs commands to study attacker patterns.</li>
+            <li>Managed FortiGate firewall rules and built a dashboard summarizing blocked categories.</li>
+          </ul>
+
+          <dt>Data Support Engineer</dt>
+          <dd>Simon Data (May 2024 - Apr 2026)</dd>
+          <ul>
+            <li>Enforced RBAC so users only hold the permissions they need, reducing insider threat risk.</li>
+            <li>Used MFA to add a layer of protection against credential theft.</li>
+            <li>Supported compliance through data protection, encryption and access control.</li>
+          </ul>
+
           <dt>Technical Support Engineer</dt>
           <dd><a href="https://www.spreedly.com/">Spreedly</a></dd>
           <ul>
@@ -263,24 +329,15 @@ const Terminal = (props: TerminalProps) => {
             <li>Integrated APIs and third-party services to enhance application functionality, leading to a more seamless user experience.</li>
           </ul>
 
-          <dt>Junior Web Developer</dt>
-          <dd><a href="https://fil-global.com/">Fil-Global Immigration Services</a></dd>
-          <ul>
-            <li>In charge of the maintenance of the website of the company.</li>
-            <li>Assisting website inquiries of the client and admin website.</li>
-            <li>Maintained the Mobile Application written in React Native</li>
-          </ul>
-
         <div className="terminal-heading">Certifications</div>
         <br />
-          <dt>Security+</dt>
+          <dt>Security+ (In Progress)</dt>
           <dd>CompTIA Certification</dd>
           <ul>
             <li>Course Overview: In-depth training on assessing and managing security posture in enterprise environments.</li>
             <li>Practical Application: Identification, analysis, and response to security events and incidents.</li>
             <li>Operate with an awareness of applicable regulations and policies, including principles of governance, risk, and compliance.</li>
-            <li>Certification: Demonstrates practical skills in automating cybersecurity tasks with Python and managing security in various environments.
-</li>
+            <li>Status: Currently studying for the SY0-701 exam.</li>
           </ul>
 
           <dt>Introduction to Cybersecurity</dt>
@@ -324,9 +381,9 @@ protection, and risk-reward analysis. Experienced in addressing real-world secur
             <li>1st Honors Dean's Lister, 2nd Honors Dean's Lister</li>
             <li>Involvements: </li>
               <ul>
-                <li>Google Developer Students Club - Chief Technology Officer</li>
-                <li>University Student Government Executive - Creatives</li>
-                <li>Engineering College Government - Chaiperson</li>
+                <li>Google Developer Student Clubs - Chief Technology Officer (2022-2024)</li>
+                <li>Association of Computer Engineering Students - Assistant Vice President, Affiliations (2024)</li>
+                <li>Engineering College Government - Executive for Membership (2022-2023)</li>
               </ul>
             <li>Coursework: </li>
               <ul>
@@ -365,8 +422,28 @@ protection, and risk-reward analysis. Experienced in addressing real-world secur
           <dt>PHP</dt>
           <dt>Bash</dt>
           <dt>C</dt>
+          <dt>Java</dt>
           <dt>Javascript</dt>
           <dt>Typescript</dt>
+        </dl>
+
+        <div className="terminal-heading">Networking & Security</div>
+        <dl>
+          <dt>Wireshark</dt>
+          <dt>Nmap</dt>
+          <dt>Netcat</dt>
+          <dt>OpenSSH</dt>
+          <dt>pfSense</dt>
+          <dt>Cisco Packet Tracer</dt>
+          <dt>GNS3</dt>
+          <dt>Elastic Security</dt>
+          <dt>FortiGate</dt>
+        </dl>
+
+        <div className="terminal-heading">Cloud</div>
+        <dl>
+          <dt>AWS (EC2, S3)</dt>
+          <dt>Azure (Entra ID, Microsoft365)</dt>
         </dl>
 
         <div className="terminal-heading">Operating Systems</div>
@@ -378,6 +455,7 @@ protection, and risk-reward analysis. Experienced in addressing real-world secur
 
         <div className="terminal-heading">Database</div>
         <dl>
+          <dt>PostgreSQL</dt>
           <dt>MongoDB</dt>
           <dt>MySQL</dt>
           <dt>XAMPP</dt>
@@ -393,6 +471,10 @@ protection, and risk-reward analysis. Experienced in addressing real-world secur
           <dt>Zendesk</dt>
           <dt>Jira</dt>
           <dt>Postman</dt>
+          <dt>Jenkins</dt>
+          <dt>Airflow</dt>
+          <dt>Datadog</dt>
+          <dt>Salesforce</dt>
           <dt>Splunk</dt>
           <dt>Chronicle</dt>
         </dl>
