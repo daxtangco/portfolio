@@ -4,7 +4,6 @@ import TerminalOutput from "./TerminalOutput";
 import InputArea from "./InputArea";
 import ErrorMessage from "./ErrorMessage";
 import WelcomeMessage from "./WelcomeMessage";
-import { logEvent } from "firebase/analytics";
 
 // Just a little helper function so I don't have to continually update my age
 const getAge = (birthDate: Date) => {
